@@ -5,3 +5,58 @@ Console.WriteLine("11. Pedir un número al usuario y mostrar su tabla de multipl
 Console.WriteLine("16. Pedir 5 números y mostrar cuántos son mayores que 10.\r\n17. Pedir 5 números y mostrar cuántos son pares.\r\n18. Pedir 5 números y mostrar el número mayor ingresado.\r\n19. Pedir 5 números y mostrar el número menor ingresado.\r\n20. Pedir una cantidad N de números e indicar cuántos son positivos.");
 Console.WriteLine("21. Pedir una cantidad N de números e indicar cuántos son negativos.\r\n22. Pedir N ventas e indicar el total vendido.\r\n23. Pedir N notas y mostrar el promedio final.\r\n24. Pedir N notas y mostrar si el promedio es aprobado (>=61) o reprobado.\r\n25. Pedir un número y dibujar una escalera con asteriscos.\r\n");
 int opcion = int.Parse(Console.ReadLine());
+switch (opcion)
+{
+    case 1:
+    break;
+    case 2:
+        break;
+    case 3:
+        break;
+    case 4:
+        break;
+    case 5:
+        break;
+    case 6:
+        break;
+    case 7:
+        break;
+    case 8:
+        break;
+    case 9:
+        break;
+    case 10:
+        break;
+    case 11:
+        break;
+    case 12:
+        break;
+    case 13:
+        break;
+    case 14:
+        break;
+    case 15:
+        break;
+    case 16:                
+        break;
+    case 17:
+        break;
+    case 18:
+        break;
+    case 19:
+        break;
+        case 20:
+        break;
+        case 21:
+        break;
+        case 22:
+        break;
+        case 23:
+        break;
+        case 24:
+        break;
+        case 25:
+        break;
+    default:
+        break;
+}
