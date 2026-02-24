@@ -8,55 +8,122 @@ int opcion = int.Parse(Console.ReadLine());
 switch (opcion)
 {
     case 1:
-    break;
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine(i);
+        }
+        break;
     case 2:
+        for (int i = 1; i <= 20; i++)
+        {
+            Console.Write(i + " ");
+        }
+        Console.WriteLine();
         break;
     case 3:
+        for (int i = 10; i >= 1; i--)
+        {
+            Console.WriteLine(i);
+        }
         break;
     case 4:
+        for (int i = 1; i <= 20; i++)
+        {
+            if (i % 2 == 0)
+            {
+                Console.WriteLine(i);
+            }
+        }
         break;
     case 5:
+        for (int i = 1; i <= 20; i++)
+        {
+            if (i % 2 != 0)
+            {
+                Console.WriteLine(i);
+            }
+        }
         break;
     case 6:
+        for (int i = 0; i < 5; i++)
+        {
+            Console.WriteLine("Hola");
+        }
         break;
     case 7:
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine($"{i} → {i * i}");
+        }
         break;
     case 8:
+        for (int i = 1; i <= 50; i++)
+        {
+            if (i % 5 == 0)
+            {
+                Console.WriteLine(i);
+            }
+        }
         break;
     case 9:
+        int suma = 0;
+        for (int i = 1; i <= 10; i++)
+        {
+            suma += i;
+        }
+        Console.WriteLine($"La suma de los números del 1 al 10 es: {suma}");
         break;
     case 10:
+        int suma1a100 = 0;
+        for (int i = 1; i <= 100; i++)
+        {
+            suma1a100 += i;
+        }
+        Console.WriteLine($"La suma de los números del 1 al 100 es: {suma1a100}");
         break;
     case 11:
+        Console.WriteLine("Ingrese un número ");
+        int numero = int.Parse(Console.ReadLine());
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine($"{numero} x {i} = {numero * i}");
+        }
         break;
     case 12:
+        Console.WriteLine("Ingrese un número");
+        int limite = int.Parse(Console.ReadLine());
+        for (int i = 1; i <= limite; i++)
+        {
+            Console.WriteLine(i);
+        }
         break;
     case 13:
+        Console.WriteLine("Ingrese un  número mayor a 1");
+        int limite2 = int.Parse(Console.ReadLine());
+        for (int i = limite2; i >= 1; i--)
+        {
+            Console.WriteLine(i);
+        }
         break;
     case 14:
-        break;
+        int suma1 = 0;
+        int resu14 = 0;
+        for (int i = 1; i <= 3; i++)
+        {
+            Console.WriteLine($"Ingrese el número {i}:");
+            int num = int.Parse(Console.ReadLine());
+            resu14 += num;
+        }
+        Console.WriteLine($"el resultados es {resu14}");
+        break;   
     case 15:
-        break;
-    case 16:                
-        break;
-    case 17:
-        break;
-    case 18:
-        break;
-    case 19:
-        break;
-        case 20:
-        break;
-        case 21:
-        break;
-        case 22:
-        break;
-        case 23:
-        break;
-        case 24:
-        break;
-        case 25:
-        break;
-    default:
+        int resu15 = 0;
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine($"Ingrese el número {i}:");
+            int num = int.Parse(Console.ReadLine());
+            resu15 += num;
+        }
+        Console.WriteLine("El promedio es"+(resu15/5));
         break;
 }
