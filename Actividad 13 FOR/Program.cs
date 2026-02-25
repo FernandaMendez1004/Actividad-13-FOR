@@ -115,7 +115,7 @@ switch (opcion)
             resu14 += num;
         }
         Console.WriteLine($"el resultados es {resu14}");
-        break;   
+        break;
     case 15:
         int resu15 = 0;
         for (int i = 1; i <= 5; i++)
@@ -124,6 +124,144 @@ switch (opcion)
             int num = int.Parse(Console.ReadLine());
             resu15 += num;
         }
-        Console.WriteLine("El promedio es"+(resu15/5));
+        Console.WriteLine("El promedio es" + (resu15 / 5));
         break;
-}
+    case 16:
+        int mayor10 = 0;
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine($"ingrese el num{i}");
+            int num = int.Parse(Console.ReadLine());
+            if (num > 10)
+            {
+                mayor10++;
+            }
+        }
+        Console.WriteLine($"La cantidad de números mayores a 10 es: {mayor10}");
+        break;
+        case 17:    
+        int pares = 0;
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine($"ingrese el num{i}");
+            int num = int.Parse(Console.ReadLine());
+            if (num % 2 == 0)
+            {
+                pares++;
+            }
+        }
+        Console.WriteLine("La cantidad de números pares es: " + pares);
+break;
+    case 18:
+        int mayor = int.MinValue;
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine($"Ingrese el número {i}:");
+            int num = int.Parse(Console.ReadLine());
+            if (num > mayor)
+            {
+                mayor = num;
+            }
+        }
+        Console.WriteLine($"El número mayor ingresado es: {mayor}");
+        break;
+    case 19:
+        int menor = int.MaxValue;
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine($"Ingrese el número {i}:");
+            int num = int.Parse(Console.ReadLine());
+            if (num < menor)
+            {
+                menor = num;
+            }
+        }
+        Console.WriteLine($"El número menor ingresado es: {menor}");
+        break;
+    case 20:
+        Console.WriteLine("¿Cuántos números desea ingresar?");
+        int cantidadN = int.Parse(Console.ReadLine());
+        int positivos = 0;
+        for (int i = 1; i <= cantidadN; i++)
+        {
+            Console.WriteLine($"Ingrese el número {i}:");
+            int num = int.Parse(Console.ReadLine());
+            if (num > 0)
+            {
+                positivos++;
+            }
+        }
+        Console.WriteLine($"La cantidad de números positivos es: {positivos}");
+        break;
+    case 21:
+        Console.WriteLine("¿Cuántos números desea ingresar?");
+        int cantidadN2 = int.Parse(Console.ReadLine());
+        int negativos = 0;
+        for (int i = 1; i <= cantidadN2; i++)
+        {
+            Console.WriteLine($"Ingrese el número {i}:");
+            int num = int.Parse(Console.ReadLine());
+            if (num < 0)
+            {
+                negativos++;
+            }
+        }
+        Console.WriteLine($"La cantidad de números negativos es: {negativos}");
+        break;
+    case 22:                
+        Console.WriteLine("¿Cuántas ventas desea ingresar?");
+        int cantidadVentas = int.Parse(Console.ReadLine());
+        double totalVendido = 0;
+        for (int i = 1; i <= cantidadVentas; i++)
+        {
+            Console.WriteLine($"Ingrese el monto de la venta {i}:");
+            double venta = double.Parse(Console.ReadLine());
+            totalVendido += venta;
+        }
+        Console.WriteLine($"El total vendido es: {totalVendido}");
+        break;
+    case 23:
+        Console.WriteLine("¿Cuántas notas desea ingresar?");
+        int cantidadNotas = int.Parse(Console.ReadLine());
+        double sumaNotas = 0;
+        for (int i = 1; i <= cantidadNotas; i++)
+        {
+            Console.WriteLine($"Ingrese la nota {i}:");
+            double nota = double.Parse(Console.ReadLine());
+            sumaNotas += nota;
+        }
+        double promedioFinal = sumaNotas / cantidadNotas;
+        Console.WriteLine($"El promedio final es: {promedioFinal}");
+        break;
+    case 24:
+        Console.WriteLine("¿Cuántas notas desea ingresar?");
+        int cantidadNotas2 = int.Parse(Console.ReadLine());
+        double sumaNotas2 = 0;
+        for (int i = 1; i <= cantidadNotas2; i++)
+        {
+            Console.WriteLine($"Ingrese la nota {i}:");
+            double nota = double.Parse(Console.ReadLine());
+            sumaNotas2 += nota;
+        }
+        double promedioFinal2 = sumaNotas2 / cantidadNotas2;
+        if (promedioFinal2 >= 61)
+        {
+            Console.WriteLine($"El promedio es: {promedioFinal2} - Aprobado");
+        }
+        else
+        {
+            Console.WriteLine($"El promedio es: {promedioFinal2} - Reprobado");
+        }
+        break;
+    case 25:
+        Console.WriteLine("Ingrese un número para dibujar la escalera:");
+        int altura = int.Parse(Console.ReadLine());
+        for (int i = 1; i <= altura; i++)
+        {
+            Console.WriteLine(new string('*', i));
+        }
+        break;
+    default:
+        Console.WriteLine("Opción no válida. Por favor, ingrese un número del 1 al 25.");
+        break;
+}   
